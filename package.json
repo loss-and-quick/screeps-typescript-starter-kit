@@ -6,7 +6,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "git+https://git.disroot.org/minicx/screeps-typescript-starter-kit.git"
   },
   "engines": {
     "node": ">=18"
@@ -29,7 +29,6 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-typescript": "^11.0.0",
     "@types/lodash": "^4.14.191",
     "@types/node": "^18.15.5",
     "@types/screeps": "^3.3.2",
@@ -47,6 +46,8 @@
     "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-screeps": "^1.0.1",
     "rollup-plugin-screepy": "^3.0.6",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "tslib": "^2.5.0",
     "typescript": "^5.0.2"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "token":"YOUR TOKEN",
+  "protocol": "https",
+  "hostname": "screeps.com",
+  "port": 443
+}

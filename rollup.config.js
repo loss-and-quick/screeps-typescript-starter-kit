@@ -21,7 +21,7 @@ export default {
     },
     plugins: [
         clear({ targets: ["dist"] }),
-        resolve({ rootDir: "src", preferBuiltins: true, browser:true, preferBuiltins:true}),
+        resolve({ rootDir: "src", preferBuiltins: true,browser:true,preferBuiltins:true}),
         commonjs(),
         typescript({ tsconfig: "./tsconfig.json"}),
         process.env.DEST ? screeps({ config: {...config,branch:process.env.DEST.toLowerCase()}, }) : undefined

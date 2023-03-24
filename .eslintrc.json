@@ -21,7 +21,8 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "import"
+        "import",
+        "promise"
     ],
     "settings": {
         "import/parsers": {
@@ -45,14 +46,18 @@
         "@typescript-eslint/explicit-member-accessibility": [
             "error",
             {
-                "accessibility": "explicit"
+                "accessibility": "no-public"
             }
         ],
-        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-unsafe-assignment":"warn",
+        "@typescript-eslint/no-unsafe-call":"warn",
+        "@typescript-eslint/require-await": "off",
+        "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/prefer-for-of": "error",
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-unused-expressions": "error",
         "@typescript-eslint/no-empty-function": "warn",
+        "@typescript-eslint/no-floating-promises":"warn",
         "import/no-unresolved": [
             "error",
             {
@@ -61,6 +66,8 @@
                 ]
             }
         ],
+        "import/no-nodejs-modules": "error",
+        "promise/prefer-await-to-callbacks": "warn",
         "dot-notation": "warn",
         "no-var": "error",
         "sort-imports": "warn",
@@ -72,7 +79,7 @@
                 ]
             }
         ],
-        "no-async-promise-executor": "off",
+        "camelcase": "warn",
         "no-caller": "error",
         "no-invalid-this": "off",
         "one-var": [
@@ -80,20 +87,6 @@
             "never"
         ],
         "quote-props": "off",
-        "id-denylist": [
-            "error",
-            "any",
-            "Number",
-            "number",
-            "String",
-            "string",
-            "Boolean",
-            "boolean",
-            "Undefined",
-            "async",
-            "await",
-            "Promise"
-        ],
         "no-unused-expressions": "off",
         "no-shadow": "off"
     }

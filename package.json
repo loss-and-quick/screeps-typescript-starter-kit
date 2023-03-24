@@ -25,7 +25,8 @@
     "watch:season": "rollup -cw --environment DEST:season",
     "watch:sim": "rollup -cw --environment DEST:sim"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
@@ -39,6 +40,7 @@
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
     "git-rev-sync": "^3.0.2",
     "path": "^0.12.7",
     "prettier": "^2.8.6",
